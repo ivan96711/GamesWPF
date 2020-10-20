@@ -17,8 +17,10 @@ namespace GamesWPF.ViewModel
 {
     public class MainWindowViewModel : BaseVM
     {
-        private DispatcherTimer timer;
-        string key = "4E44E6AF9043A45286486F3A52510CD5";
+        // steam web api key https://steamcommunity.com/dev/apikey
+        string key = "";
+
+        private DispatcherTimer timer;        
         string steamDir = "";
         public MainWindowViewModel()
         {
