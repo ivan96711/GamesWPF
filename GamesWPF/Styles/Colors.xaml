@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GamesWPF.Styles">
+
+    <SolidColorBrush x:Key="MainBackgroundBrush"
+                     Color="#FF1B1F22" />
+    <Color x:Key="MainBackgroundColor">#FF1B1F22</Color>
+
+    <SolidColorBrush x:Key="MainBackgroundBrushLight"
+                     Color="#FF202529" />
+    <Color x:Key="MainBackgroundColorLight">#FF202529</Color>
+
+    <SolidColorBrush x:Key="MainBackgroundBrushLight+"
+                     Color="#FF2E353A" />
+    <Color x:Key="MainBackgroundColorLight+">#FF2E353A</Color>
+
+</ResourceDictionary>

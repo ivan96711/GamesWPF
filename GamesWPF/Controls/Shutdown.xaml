@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="GamesWPF.Controls.Shutdown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GamesWPF.Controls"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center">
+    <Grid>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right">
+
+            <ContentControl Height="15"
+                            Width="15"
+                            ContentTemplate="{StaticResource Circle}"
+                            Margin="2"
+                            MouseLeftButtonUp="ContentControl_MouseLeftButtonUp_2">
+                <ContentControl.Style>
+                    <Style TargetType="{x:Type ContentControl}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver"
+                                     Value="False">
+                                <Setter Property="Content"
+                                        Value="#28cd41"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+                                <Setter Property="Content"
+                                        Value="#59f341"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+            </ContentControl>
+
+            <ContentControl Height="15"
+                            Width="15"
+                            ContentTemplate="{StaticResource Circle}"
+                            Margin="2"
+                            MouseLeftButtonUp="ContentControl_MouseLeftButtonUp_1">
+                <ContentControl.Style>
+                    <Style TargetType="{x:Type ContentControl}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver"
+                                     Value="False">
+                                <Setter Property="Content"
+                                        Value="#ff9500"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+                                <Setter Property="Content"
+                                        Value="#ffc12e"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+            </ContentControl>
+
+            <ContentControl Height="15"
+                            Width="15"
+                            ContentTemplate="{StaticResource Circle}"
+                            Margin="2"
+                            MouseLeftButtonUp="ContentControl_MouseLeftButtonUp">
+                <ContentControl.Style>
+                    <Style TargetType="{x:Type ContentControl}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver"
+                                     Value="False">
+                                <Setter Property="Content"
+                                        Value="#FFFF3B30"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+                                <Setter Property="Content"
+                                        Value="#ff6159"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+            </ContentControl>
+
+        </StackPanel>
+    </Grid>
+</UserControl>
